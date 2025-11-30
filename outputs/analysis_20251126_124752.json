@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-11-26T12:47:52.902525",
+  "image_filename": "10.png",
+  "tumor_analysis": {
+    "area_pixels": 953,
+    "area_percentage": 1.45,
+    "centroid": {
+      "x": 128,
+      "y": 128
+    },
+    "bounding_box": {
+      "x_min": 0,
+      "y_min": 0,
+      "x_max": 256,
+      "y_max": 256
+    },
+    "contour_count": 1
+  },
+  "xai_explanation": {
+    "textual_justification": "Ollama error: \u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u2122 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u2122 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u00b9 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u00b8 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u00bc \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u00b4 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u00a6 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u00a7 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u00e2\u00a0\u2021 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u001b[K\u001b[?25h\u001b[?2026l\nError: pull model manifest: file does not exist",
+    "gradcam_summary": {
+      "hot_regions": 4974,
+      "hot_percentage": 7.59
+    },
+    "attention_summary": {
+      "alignment_score": 93.21,
+      "peak_value": 1.0,
+      "num_peaks": 3290,
+      "mean_attention": 0.932
+    }
+  },
+  "model_info": {
+    "architecture": "U-Net with ResNet34 encoder",
+    "device": "cuda",
+    "llm_provider": "LLaMA-3"
+  }
+}

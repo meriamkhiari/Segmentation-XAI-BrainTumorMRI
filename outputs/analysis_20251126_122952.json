@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-11-26T12:29:52.437774",
+  "image_filename": "11.png",
+  "tumor_analysis": {
+    "area_pixels": 1583,
+    "area_percentage": 2.42,
+    "centroid": {
+      "x": 128,
+      "y": 128
+    },
+    "bounding_box": {
+      "x_min": 0,
+      "y_min": 0,
+      "x_max": 256,
+      "y_max": 256
+    },
+    "contour_count": 1
+  },
+  "xai_explanation": {
+    "textual_justification": "HTTP error 403: {\"code\":\"The caller does not have permission to execute the specified operation\",\"error\":\"Your newly created teams doesn't have any credits yet. You can purchase credits on https://console.x.ai/team/55c53328-6bc1-4205-bc9e-d903fe60257d.\"}",
+    "gradcam_summary": {
+      "hot_regions": 5346,
+      "hot_percentage": 8.16
+    },
+    "attention_summary": {
+      "alignment_score": 91.75,
+      "peak_value": 1.0,
+      "num_peaks": 3508,
+      "mean_attention": 0.918
+    }
+  },
+  "model_info": {
+    "architecture": "U-Net with ResNet34 encoder",
+    "device": "cuda",
+    "llm_provider": "Grok (xAI)"
+  }
+}

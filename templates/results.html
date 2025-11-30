@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Analysis Results</title></head>
+<body>
+<h1>Results</h1>
+
+<h2>Predicted Mask</h2>
+<img src="data:image/png;base64,{{ mask_image }}" width="400">
+
+<h2>Grad-CAM Heatmap</h2>
+<img src="data:image/png;base64,{{ gradcam_image }}" width="400">
+
+<h2>Overlay Visualization</h2>
+<img src="data:image/png;base64,{{ overlay_image }}" width="400">
+
+<h2>Tumor Metrics</h2>
+<ul>
+<li>Area: {{ tumor_metrics.area_pixels }} px</li>
+<li>% of Image: {{ tumor_metrics.area_percentage }}%</li>
+<li>Centroid: ({{ tumor_metrics.centroid.x }}, {{ tumor_metrics.centroid.y }})</li>
+<li>Contours: {{ tumor_metrics.contour_count }}</li>
+</ul>
+
+<h2>AI Explanation</h2>
+<p>{{ explanation }}</p>
+
+<h2>Download JSON</h2>
+<a href="{{ url_for('download_file', filename=json_file) }}" download>Download JSON</a>
+
+</body>
+</html>

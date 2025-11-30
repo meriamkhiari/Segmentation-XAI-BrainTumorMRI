@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-11-25T16:22:06.668700",
+  "image_filename": "18.png",
+  "tumor_analysis": {
+    "area_pixels": 420,
+    "area_percentage": 0.64,
+    "location": {
+      "centroid": {
+        "x": 130,
+        "y": 93
+      },
+      "bounding_box": {
+        "x": 118,
+        "y": 82,
+        "width": 26,
+        "height": 22
+      }
+    },
+    "tumor_regions_detected": 1
+  },
+  "xai_explanation": {
+    "textual_justification": "Agent stopped due to iteration limit or time limit.",
+    "agent_analysis": "Agent stopped due to iteration limit or time limit."
+  },
+  "model_info": {
+    "architecture": "U-Net with ResNet34 encoder",
+    "device": "cuda",
+    "llm_provider": "Grok (xAI)"
+  }
+}

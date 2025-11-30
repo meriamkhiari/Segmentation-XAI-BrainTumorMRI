@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-11-25T20:47:26.471586",
+  "image_filename": "12.png",
+  "tumor_analysis": {
+    "area_pixels": 1985,
+    "area_percentage": 3.03,
+    "centroid": {
+      "x": 128,
+      "y": 128
+    },
+    "bounding_box": {
+      "x_min": 0,
+      "y_min": 0,
+      "x_max": 256,
+      "y_max": 256
+    },
+    "contour_count": 1
+  },
+  "xai_explanation": {
+    "textual_justification": "Error calling Grok API: 403 Client Error: Forbidden for url: https://api.x.ai/v1/chat/completions",
+    "gradcam_summary": {
+      "hot_regions": 5448,
+      "hot_percentage": 8.31
+    },
+    "attention_summary": {
+      "alignment_score": 91.03,
+      "peak_value": 1.0,
+      "num_peaks": 3600,
+      "mean_attention": 0.91
+    }
+  },
+  "model_info": {
+    "architecture": "U-Net with ResNet34 encoder",
+    "device": "cuda",
+    "llm_provider": "Grok (xAI)"
+  }
+}
